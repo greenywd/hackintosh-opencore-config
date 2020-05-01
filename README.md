@@ -1,4 +1,4 @@
-# hackintosh-opencore-config
+# Greeny's Hackintosh OC EFI
 
 ## Hardware
 Type|Item
