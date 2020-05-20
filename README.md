@@ -3,7 +3,7 @@
 ## Hardware
 Type|Item
 :----|:----
-**CPU** | AMD Ryzen 7 3700X 3.6 GHz 8-Core Processor
+**CPU** | AMD Ryzen 9 3900X 3.8 GHz 12-Core Processor
 **Motherboard** | MSI B450 GAMING PRO CARBON AC ATX AM4 Motherboard
 **Memory** | Corsair Vengeance LPX 32 GB (2 x 16 GB) DDR4-3200 Memory
 **Storage** | Samsung 860 Evo 500 GB 2.5" Solid State Drive
