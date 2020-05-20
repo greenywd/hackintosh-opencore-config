@@ -8,6 +8,14 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>SSDT-EC-USBX-DESKTOP</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-EC-USBX-DESKTOP.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>CPUPM</string>
 				<key>Enabled</key>
 				<true/>
@@ -24,7 +32,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>My custom DSDT</string>
+				<string>NullEthernet</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -246,6 +254,8 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
+			<key>DisableRtcChecksum</key>
+			<false/>
 			<key>AppleCpuPmCfgLock</key>
 			<false/>
 			<key>AppleXcpmCfgLock</key>
@@ -1260,6 +1270,8 @@
 		</array>
 		<key>Security</key>
 		<dict>
+			<key>BootProtect</key>
+			<string>None</string>
 			<key>AllowNvramReset</key>
 			<true/>
 			<key>ExposeSensitiveData</key>
@@ -1378,7 +1390,7 @@
 			<key>MLB</key>
 			<string>C02803609QXJG36FB</string>
 			<key>ROM</key>
-			<data>ESIzAAAA</data>
+			<data>ANhhqHNy</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
@@ -1401,6 +1413,19 @@
 	</dict>
 	<key>UEFI</key>
 	<dict>
+		<key>APFS</key>
+		<dict>
+			<key>EnableJumpstart</key>
+			<true/>
+			<key>HideVerbose</key>
+			<true/>
+			<key>JumpstartHotPlug</key>
+			<false/>
+			<key>MinDate</key>
+			<integer>0</integer>
+			<key>MinVersion</key>
+			<integer>0</integer>
+		</dict>
 		<key>Output</key>
 		<dict>
 			<key>ClearScreenOnModeSwitch</key>
@@ -1449,7 +1474,6 @@
 		<array>
 			<string>OpenRuntime.efi</string>
 			<string>VBoxHfs.efi</string>
-			<string>ApfsDriverLoader.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -1472,7 +1496,22 @@
 			<key>TimerResolution</key>
 			<integer>50000</integer>
 		</dict>
-		<key>Protocols</key>
+		<key>Quirks</key>
+		<dict>
+			<key>ExitBootServicesDelay</key>
+			<integer>0</integer>
+			<key>IgnoreInvalidFlexRatio</key>
+			<false/>
+			<key>ReleaseUsbOwnership</key>
+			<false/>
+			<key>RequestBootVarFallback</key>
+			<true/>
+			<key>RequestBootVarRouting</key>
+			<true/>
+			<key>UnblockFsConnect</key>
+			<false/>
+		</dict>
+		<key>ProtocolOverrides</key>
 		<dict>
 			<key>AppleAudio</key>
 			<false/>
@@ -1485,6 +1524,8 @@
 			<key>AppleImageConversion</key>
 			<false/>
 			<key>AppleKeyMap</key>
+			<false/>
+			<key>AppleRtcRam</key>
 			<false/>
 			<key>AppleSmcIo</key>
 			<false/>
@@ -1503,21 +1544,19 @@
 			<key>UnicodeCollation</key>
 			<false/>
 		</dict>
-		<key>Quirks</key>
-		<dict>
-			<key>ExitBootServicesDelay</key>
-			<integer>0</integer>
-			<key>IgnoreInvalidFlexRatio</key>
-			<false/>
-			<key>ReleaseUsbOwnership</key>
-			<false/>
-			<key>RequestBootVarFallback</key>
-			<true/>
-			<key>RequestBootVarRouting</key>
-			<true/>
-			<key>UnblockFsConnect</key>
-			<false/>
-		</dict>
+		<key>ReservedMemory</key>
+		<array>
+			<dict>
+				<key>Address</key>
+				<integer>268435456</integer>
+				<key>Comment</key>
+				<string>HD3000: IGPU memory corruption errata</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Size</key>
+				<integer>268435456</integer>
+			</dict>
+		</array>
 	</dict>
 </dict>
 </plist>
