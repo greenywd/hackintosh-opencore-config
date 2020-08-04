@@ -39,7 +39,7 @@
 				<string>ssdt-rmne.aml</string>
 			</dict>
 		</array>
-		<key>Block</key>
+		<key>Delete</key>
 		<array/>
 		<key>Patch</key>
 		<array/>
@@ -80,6 +80,8 @@
 		</array>
 		<key>Quirks</key>
 		<dict>
+			<key>ProvideMaxSlide</key>
+			<integer>0</integer>
 			<key>SyncRuntimePermissions</key>
 			<true/>
 			<key>RebuildAppleMemoryMap</key>
@@ -97,7 +99,7 @@
 			<key>EnableSafeModeSlide</key>
 			<true/>
 			<key>EnableWriteUnprotector</key>
-			<true/>
+			<false/>
 			<key>ForceExitBootServices</key>
 			<false/>
 			<key>ProtectMemoryRegions</key>
@@ -139,7 +141,7 @@
 				<data>AQ==</data>
 			</dict>
 		</dict>
-		<key>Block</key>
+		<key>Delete</key>
 		<dict/>
 	</dict>
 	<key>Kernel</key>
@@ -1286,8 +1288,6 @@
 			<true/>
 			<key>AuthRestart</key>
 			<false/>
-			<key>BlacklistAppleUpdate</key>
-			<true/>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -1331,12 +1331,12 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 agdpmod=pikera</string>
+				<string>-v keepsyms=1 debug=0x100 agdpmod=pikera alcid=1</string>
 				<key>prev-lang:kbd</key>
 				<string>en-US:0</string>
 			</dict>
 		</dict>
-		<key>Block</key>
+		<key>Delete</key>
 		<dict>
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<array>
@@ -1413,6 +1413,8 @@
 	<dict>
 		<key>APFS</key>
 		<dict>
+			<key>GlobalConnect</key>
+			<false/>
 			<key>EnableJumpstart</key>
 			<true/>
 			<key>HideVerbose</key>
@@ -1426,6 +1428,8 @@
 		</dict>
 		<key>Output</key>
 		<dict>
+			<key>UgaPassThrough</key>
+			<false/>
 			<key>ClearScreenOnModeSwitch</key>
 			<false/>
 			<key>ConsoleMode</key>
@@ -1511,6 +1515,8 @@
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
+			<key>AppleFramebufferInfo</key>
+			<false/>
 			<key>AppleAudio</key>
 			<false/>
 			<key>AppleBootPolicy</key>
