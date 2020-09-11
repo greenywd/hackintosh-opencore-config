@@ -40,11 +40,9 @@
 			</dict>
 		</array>
 		<key>Delete</key>
-		<array>
-		</array>
+		<array/>
 		<key>Patch</key>
-		<array>
-		</array>
+		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>FadtEnableReset</key>
@@ -255,8 +253,7 @@
 			</dict>
 		</array>
 		<key>Block</key>
-		<array>
-		</array>
+		<array/>
 		<key>Emulate</key>
 		<dict>
 			<key>Cpuid1Data</key>
@@ -289,7 +286,7 @@
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
-			<false/>
+			<true/>
 			<key>AppleXcpmForceBoost</key>
 			<false/>
 			<key>DummyPowerManagement</key>
@@ -443,7 +440,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_cache_info - don't set cpuid_cores_per_package</string>
+				<string>algrey - cpuid_set_cache_info - don&apos;t set cpuid_cores_per_package</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1228,8 +1225,7 @@
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array>
-		</array>
+		<array/>
 		<key>Boot</key>
 		<dict>
 			<key>HibernateMode</key>
@@ -1262,7 +1258,7 @@
 			<key>Target</key>
 			<integer>3</integer>
 			<key>AppleDebug</key>
-			<false/>
+			<true/>
 			<key>ApplePanic</key>
 			<true/>
 		</dict>
@@ -1283,6 +1279,12 @@
 		</array>
 		<key>Security</key>
 		<dict>
+			<key>EnablePassword</key>
+			<false/>
+			<key>DmgLoading</key>
+			<string>Signed</string>
+			<key>ApECID</key>
+			<integer>0</integer>
 			<key>BootProtect</key>
 			<string>None</string>
 			<key>AllowNvramReset</key>
@@ -1527,6 +1529,10 @@
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
+			<key>AppleSecureBoot</key>
+			<false/>
+			<key>AppleImg4Verification</key>
+			<false/>
 			<key>AppleFramebufferInfo</key>
 			<false/>
 			<key>AppleAudio</key>
