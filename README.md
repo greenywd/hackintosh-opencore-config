@@ -9,6 +9,7 @@ Type|Item
 **Storage** | Samsung 860 Evo 500 GB 2.5" Solid State Drive
 **Storage** | Intel 660p Series 1.02 TB M.2-2280 NVME Solid State Drive
 **Storage** | Hitachi Deskstar 1 TB 3.5" 7200RPM Internal Hard Drive
+**Storage** | Western Digital Blue 1 TB 2.5" Solid State Drive
 **Video Card** | MSI Radeon RX 5700 XT 8 GB EVOKE OC Video Card
 **Case** | Cooler Master HAF 912 Advanced ATX Mid Tower Case
-**Power Supply** | Corsair CSM 650 W 80+ Gold Certified Semi-modular ATX Power Supply
+**Power Supply** | Corsair RM (2019) 750 W 80+ Gold Certified Fully Modular ATX Power Supply
